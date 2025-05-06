@@ -43,101 +43,103 @@ nav ul li a {
 }
 
 .introducao {
+    height: 80vh;
     display: flex;
-    justify-content: space-between;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 154px;
-    background-image: url(img/fundo.jfif);
-    background-size: auto;
-    background-position: 0rem 27%;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(img/fundo.jpg);
+    background-position: 0rem 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
     opacity: 0.9;
-    background-color: #f4f4f4;
 }
 
-.texto-introducao {
-    width: 50%;
+.texto-introducao{
+    width: 40%;
     color: #f9f9f9;
-    padding-left: 2%;
-    padding-right: 3%;
-    padding-top: 5%;
+    margin-left: 10%;
+
+    p{
+        font-size: 16px;
+        width: 89%;
+    }
 }
 
 .texto-introducao h1 {
     font-size: 40px;
 }
 
-.carrossel {
-    width: 55%;
-    padding-left: 2rem;
-}
-
-.carrossel img {
-    height: 50vh;
-}
-
-.contatos-logo {
-    margin-top: 6%;
+.contatos-logo{
+    display: flex;
+    flex-direction: column;
 }
 
 .contatos-logo a img {
     width: 40px;
-    margin-right: 10px;
+} 
+
+.carrossel {
+    width: 39%;
 }
 
+.slides{
+    width: 48vw;
+}
+
+/* ----------------------------------------- */
+
 .sobre-nos {
-    padding-top: 7%;
-    padding-left: 13%;
-    padding-right: 77px;
-    padding-bottom: 2.5%;
-    height: 54rem;
+    border: solid rgb(32, 30, 30);
     background-image: url(img/2-fundo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5); 
     background-blend-mode: multiply;
+    height: 56rem;
 }
 
-.fundo{
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95%;
-    height: 48rem;
-    border-radius: 2%;
+.fundo {
     border: solid rgb(32, 30, 30);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    margin-top: 10%;
+    margin-left: 12%;
+    height: 40rem;
 }
 
-.info-empresa {
-    margin-left: 6%;
+.info-empresa{
+    width: 50%;
+
+    .texto {
+        .texto1 {
+            height: 12vh;
+        }
+
+        .texto2{
+            height: 32vh;
+        }
+
+        p{
+            color: #FFF;
+            font-size: 18px;
+            
+        }
+    }
 }
 
-.info-empresa .texto {
-    padding: 10px;
-    color: #fff;
-    width: 28vw;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.info-empresa .texto p {
-    padding: 10px;
-    width: 28vw;
-}
-
-.imagem img {
-    padding-top: 15px;
-    height: 36vh;
-    width: 25rem;
-}
-
-.imagem-empresa{ 
-    color: #fff;
-    padding-right: 30rem;
-    height: 60vh;
-    width: 45%;
+.imagem-empresa{
+    display: flex;
+    flex-direction: column;
+    
+    .imagem{
+        img{
+            width: 23vw;
+        }
+    }
 }
 
 .clientes {
@@ -366,76 +368,63 @@ footer {
     .introducao {
         display: flex;
         flex-direction: column;
-        padding: 20px;
-        background-size: cover;
+        background-image: url(img/fundo-mobile.png);
+        background-position: 50%;
         align-items: center;
         text-align: center;
     }
 
     .texto-introducao {
         width: 100%;
-        padding: 10px;
     }
 
     .texto-introducao h1 {
         width: 90%;
-        margin: 0 auto;
     }
 
     .carrossel {
         width: 100%;
-        padding-left: 0;
+        margin-left: 10%;
     }
 
     .carrossel .slides img {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+        width: 90vw;
         height: 30vh;
     }
 
     .contatos-logo {
-        margin: 20px auto;
-        display: flex;
-        justify-content: center;
+        flex-direction: row;
+        margin-top: 7%;
     }
 
-    .sobre-nos {
-        display: flex;
+    .sobre-nos{
+        background-image: url(img/2-fundo-mobile.png);
+    }
+
+    .fundo{
         flex-direction: column;
-        padding: 20px;
-        height: auto;
+        height: 42rem;
+        width: 80%;
+        margin-top: 25%;
     }
 
-    .fundo {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        margin-bottom: 10%;
+    .info-empresa{
+        width: 95%;
+
+        .texto{
+            .texto1{
+                height: 17vh;
+            }
+
+            .texto2{
+                height: 38vh;
+            }
+        }
     }
 
-    .info-empresa .texto {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .info-empresa .texto p {
-        width: 90%;
-        margin: 0 auto;
-    }
 
     .imagem-empresa {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    .imagem-empresa .imagem img {
-        height: auto;
-        max-width: 100%;
+        display: none;
     }
 
     .clientes-imagens {
